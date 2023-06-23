@@ -77,7 +77,7 @@ class _HomeState extends State<Home> {
                 child: Align(
                   alignment: Alignment.center,
                   child: Text(
-                    "      IN-EDIT CCS",
+                    "      Selected Event",
                     style: TextStyle(
                         color: Color(0xFFF4F4F4),
                         fontSize: 25.sp,

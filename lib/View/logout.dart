@@ -200,43 +200,6 @@ class Logout extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 30.w),
                 child: InkWell(
                   onTap: () {
-                    Navigator.push(context,
-                      MaterialPageRoute(builder:
-                          (context)=>Scan(zoneId: '', eventId: '',),
-                      ),
-                    );
-                  },
-                  child: Container(
-                    height: 50.h,
-                    width: 250.w,
-                    padding: EdgeInsets.symmetric(horizontal: 12.w),
-                    decoration: BoxDecoration(
-                      color: Color(0xFF557089),
-                      borderRadius: BorderRadius.circular(12.h),
-                    ),
-                    child: Center(
-                        child: Text(
-                          "Cerrar sesión",
-                          style: TextStyle(
-                              color: Color(0xFFF4F4F4),
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16.sp,
-                              fontFamily: 'Montserrat'
-                          ),
-                        ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-
-            Positioned(
-              top: 210.h,
-              left: 60.w,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30.w),
-                child: InkWell(
-                  onTap: () {
                     Navigator.pushAndRemoveUntil(context,
                       MaterialPageRoute(builder:
                           (context)=>Login(),

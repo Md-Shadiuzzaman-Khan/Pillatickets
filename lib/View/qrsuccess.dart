@@ -232,7 +232,7 @@ class SuccessPage extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Name: $name ',
+                        '$name ',
                         style: TextStyle(
                           fontSize: 22.sp,
                           fontWeight: FontWeight.bold,
@@ -240,7 +240,7 @@ class SuccessPage extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        'Surname: $surname',
+                        '$surname',
                         style: TextStyle(
                           fontSize: 22.sp,
                           fontWeight: FontWeight.bold,
@@ -250,7 +250,7 @@ class SuccessPage extends StatelessWidget {
                     ],
                   ),
                   Text(
-                    'Ticket ID: $ticketId',
+                    'ID: $ticketId',
                     style: TextStyle(
                       fontSize: 16.sp,
                       color: Colors.white,
@@ -258,7 +258,7 @@ class SuccessPage extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    '$createdAt',
+                    'Date: \n$createdAt',
                     style: TextStyle(
                       fontSize: 22.sp,
                       fontWeight: FontWeight.bold,
@@ -268,7 +268,7 @@ class SuccessPage extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 20.h),
                     child: Text(
-                      '$zone Ticket',
+                      'Ticket: $zone',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 25.sp,
@@ -277,7 +277,7 @@ class SuccessPage extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'Email: $email',
+                    'Email: \n$email',
                     style: TextStyle(
                       fontSize: 22.sp,
                       fontWeight: FontWeight.bold,
@@ -285,7 +285,7 @@ class SuccessPage extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'Phone: $phone',
+                    'Phone: \n$phone',
                     style: TextStyle(
                       fontSize: 22.sp,
                       fontWeight: FontWeight.bold,
@@ -302,128 +302,4 @@ class SuccessPage extends StatelessWidget {
   }
 }
 
-// import 'package:flutter/cupertino.dart';
-// import 'package:flutter/material.dart';
-// import 'package:flutter_screenutil/flutter_screenutil.dart';
-//
-// class SuccessPage extends StatelessWidget {
-//   final String name;
-//   final String surname;
-//   final String ticketId;
-//   final String createdAt;
-//   final String email;
-//   final String mobile;
-//   final String type;
-//   final List<String> zones;
-//
-//   SuccessPage({
-//     required this.name,
-//     required this.surname,
-//     required this.ticketId,
-//     required this.createdAt,
-//     required this.email,
-//     required this.mobile,
-//     required this.type,
-//     required this.zones,
-//   });
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Color(0xFF24292E),
-//       body: SafeArea(
-//         child: SingleChildScrollView(
-//           child: Padding(
-//             padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 24.h),
-//             child: Column(
-//               crossAxisAlignment: CrossAxisAlignment.start,
-//               children: [
-//                 Text(
-//                   'Ticket Scanned Successfully',
-//                   style: TextStyle(
-//                     color: Colors.white,
-//                     fontSize: 22.sp,
-//                     fontWeight: FontWeight.bold,
-//                   ),
-//                 ),
-//                 SizedBox(height: 24.h),
-//                 Text(
-//                   'Name: $name $surname',
-//                   style: TextStyle(
-//                     color: Colors.white,
-//                     fontSize: 16.sp,
-//                   ),
-//                 ),
-//                 SizedBox(height: 8.h),
-//                 Text(
-//                   'Ticket ID: $ticketId',
-//                   style: TextStyle(
-//                     color: Colors.white,
-//                     fontSize: 16.sp,
-//                   ),
-//                 ),
-//                 SizedBox(height: 8.h),
-//                 Text(
-//                   'Created At: $createdAt',
-//                   style: TextStyle(
-//                     color: Colors.white,
-//                     fontSize: 16.sp,
-//                   ),
-//                 ),
-//                 SizedBox(height: 8.h),
-//                 Text(
-//                   'Email: $email',
-//                   style: TextStyle(
-//                     color: Colors.white,
-//                     fontSize: 16.sp,
-//                   ),
-//                 ),
-//                 SizedBox(height: 8.h),
-//                 Text(
-//                   'Mobile: $mobile',
-//                   style: TextStyle(
-//                     color: Colors.white,
-//                     fontSize: 16.sp,
-//                   ),
-//                 ),
-//                 SizedBox(height: 8.h),
-//                 Text(
-//                   'Type: $type',
-//                   style: TextStyle(
-//                     color: Colors.white,
-//                     fontSize: 16.sp,
-//                   ),
-//                 ),
-//                 SizedBox(height: 8.h),
-//                 Text(
-//                   'Zones:',
-//                   style: TextStyle(
-//                     color: Colors.white,
-//                     fontSize: 16.sp,
-//                   ),
-//                 ),
-//                 SizedBox(height: 8.h),
-//                 ListView.builder(
-//                   shrinkWrap: true,
-//                   physics: NeverScrollableScrollPhysics(),
-//                   itemCount: zones.length,
-//                   itemBuilder: (context, index) {
-//                     final zone = zones[index];
-//                     return Text(
-//                       '- $zone',
-//                       style: TextStyle(
-//                         color: Colors.white,
-//                         fontSize: 16.sp,
-//                       ),
-//                     );
-//                   },
-//                 ),
-//               ],
-//             ),
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
 
