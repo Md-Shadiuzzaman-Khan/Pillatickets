@@ -23,7 +23,7 @@ class _TicketSearchState extends State<TicketSearch> {
       _isLoading = true;
     });
 
-    final url = Uri.parse('https://jobfid.com/api/search-ticket/$searchText');
+    final url = Uri.parse('https://pillatickets.com/api/search-ticket/$searchText');
     final response = await http.get(url);
 
     if (response.statusCode == 200) {

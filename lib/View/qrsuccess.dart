@@ -189,7 +189,7 @@ class SuccessPage extends StatelessWidget {
             ),
 
             Positioned(
-              top: 120.h,
+              top: 100.h,
               left: 80.w,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

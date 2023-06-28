@@ -35,7 +35,7 @@ class _SelectScanState extends State<SelectScan> {
       SharedPreferences prefs = await SharedPreferences.getInstance();
       String? SeventId = prefs.getString('eventId');
       var response =
-          await http.get(Uri.https('jobfid.com', 'api/get-zones/$SeventId'));
+          await http.get(Uri.https('pillatickets.com', 'api/get-zones/$SeventId'));
       if (response.statusCode == 200) {
         var jsonData = jsonDecode(response.body);
         List<Zone> zones = [];

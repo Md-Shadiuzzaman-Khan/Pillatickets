@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pillatickets/View/selectscan.dart';
 import 'package:pillatickets/View/ticket.dart';
-
 import 'home.dart';
 import 'logout.dart';
 
@@ -214,8 +213,6 @@ class Scan extends StatelessWidget {
                 ),
               ),
             ),
-
-
           ],
         ),
       ),

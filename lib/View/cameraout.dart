@@ -46,7 +46,7 @@ class _QROutScannerPageState extends State<QROutScannerPage> {
   Future<void> checkTicketId(String ticketId) async {
     try {
       final response = await http.post(
-        Uri.parse('https://jobfid.com/api/scan/checkout'),
+        Uri.parse('https://pillatickets.com/api/scan/checkout'),
         body: {
           'ticket_id': ticketId,
           'zone': widget.zoneName,

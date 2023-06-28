@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
     String? SeventId = prefs.getString('eventId');
 
     final response = await http
-        .get(Uri.parse('http://jobfid.com/api/event-tickets-info/$SeventId'));
+        .get(Uri.parse('https://pillatickets.com/api/event-tickets-info/$SeventId'));
     if (response.statusCode == 200) {
       final jsonData = jsonDecode(response.body);
       final data = jsonData['data'];

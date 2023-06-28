@@ -23,7 +23,7 @@ class _SelectionScreenState extends State<SelectionScreen> {
   }
 
   Future<List<Event>> getEvents() async {
-    var response = await http.get(Uri.https('jobfid.com', 'api/get-events'));
+    var response = await http.get(Uri.https('pillatickets.com', 'api/get-events'));
     var jsonData = jsonDecode(response.body);
     List<Event> events = [];
 
